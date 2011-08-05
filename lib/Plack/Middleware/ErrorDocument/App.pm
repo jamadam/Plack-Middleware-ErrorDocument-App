@@ -4,6 +4,7 @@ use warnings;
 use parent qw(Plack::Middleware);
 use Plack::MIME;
 use Plack::Util;
+use HTTP::Status qw(is_error);
 
 sub call {
     my $self = shift;
